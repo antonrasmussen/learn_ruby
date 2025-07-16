@@ -1,0 +1,225 @@
+day0.notes
+
+
+ant0n@ant0n ~/repos/learn_ruby/sample_code (main) :) irb --simple-prompt -r rbconfig
+
+WARNING: This version of ruby is included in macOS for compatibility with legacy software. 
+In future versions of macOS the ruby runtime will not be available by 
+default, and may require you to install an additional package.
+
+Ignoring ffi-1.15.3 because its extensions are not built. Try: gem pristine ffi --version 1.15.3
+>> RbConfig::CONFIG["rubylibdir"] # Ruby standard library 
+=> "/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0"
+
+total 1096
+-rw-r--r--   1 root  wheel   1857 May  4 01:39 yaml.rb
+drwxr-xr-x   4 root  wheel    128 May  4 01:39 yaml
+-rw-r--r--   1 root  wheel   6881 May  4 01:39 webrick.rb
+drwxr-xr-x  25 root  wheel    800 May  4 01:39 webrick
+-rw-r--r--   1 root  wheel   1473 May  4 01:39 weakref.rb
+-rw-r--r--   1 root  wheel   3196 May  4 01:39 uri.rb # Tools for uniform handling of URIs
+drwxr-xr-x  13 root  wheel    416 May  4 01:39 uri # subdirectory containing components of the uri library
+drwxr-xr-x  34 root  wheel   1088 May  4 01:39 universal-darwin24
+drwxr-xr-x   4 root  wheel    128 May  4 01:39 unicode_normalize
+-rw-r--r--   1 root  wheel  10184 May  4 01:39 un.rb
+-rw-r--r--   1 root  wheel  14642 May  4 01:39 tsort.rb
+-rw-r--r--   1 root  wheel   6579 May  4 01:39 tracer.rb
+drwxr-xr-x   3 root  wheel     96 May  4 01:39 tracer
+-rw-r--r--   1 root  wheel   4347 May  4 01:39 tmpdir.rb
+-rw-r--r--   1 root  wheel   3899 May  4 01:39 timeout.rb
+-rw-r--r--   1 root  wheel  24120 May  4 01:39 time.rb
+-rw-r--r--   1 root  wheel   3408 May  4 01:39 thwait.rb
+drwxr-xr-x   3 root  wheel     96 May  4 01:39 thwait
+-rw-r--r--   1 root  wheel  11484 May  4 01:39 tempfile.rb # A mechanism for automating the creation of temporary files
+drwxr-xr-x   3 root  wheel     96 May  4 01:39 syslog
+-rw-r--r--   1 root  wheel   7407 May  4 01:39 sync.rb
+-rw-r--r--   1 root  wheel  44554 May  4 01:39 socket.rb
+-rw-r--r--   1 root  wheel   4136 May  4 01:39 singleton.rb
+-rw-r--r--   1 root  wheel   6817 May  4 01:39 shellwords.rb
+-rw-r--r--   1 root  wheel  11668 May  4 01:39 shell.rb
+drwxr-xr-x   9 root  wheel    288 May  4 01:39 shell
+-rw-r--r--   1 root  wheel  24645 May  4 01:39 set.rb
+-rw-r--r--   1 root  wheel   9200 May  4 01:39 securerandom.rb
+-rw-r--r--   1 root  wheel  24119 May  4 01:39 scanf.rb
+-rw-r--r--   1 root  wheel  36972 May  4 01:39 rubygems.rb
+drwxr-xr-x  75 root  wheel   2400 May  4 01:39 rubygems
+-rw-r--r--   1 root  wheel   2940 May  4 01:39 rss.rb
+drwxr-xr-x  27 root  wheel    864 May  4 01:39 rss
+-rw-r--r--   1 root  wheel   2494 May  4 01:39 ripper.rb
+drwxr-xr-x   6 root  wheel    192 May  4 01:39 ripper
+drwxr-xr-x   5 root  wheel    160 May  4 01:39 rinda
+drwxr-xr-x  37 root  wheel   1184 May  4 01:39 rexml
+-rw-r--r--   1 root  wheel  75205 May  4 01:39 resolv.rb
+-rw-r--r--   1 root  wheel   1805 May  4 01:39 resolv-replace.rb
+-rw-r--r--   1 root  wheel   5000 May  4 01:39 rdoc.rb
+drwxr-xr-x  55 root  wheel   1760 May  4 01:39 rdoc
+drwxr-xr-x   4 root  wheel    128 May  4 01:39 racc
+-rw-r--r--   1 root  wheel  21619 May  4 01:39 psych.rb
+drwxr-xr-x  23 root  wheel    736 May  4 01:39 psych
+-rw-r--r--   1 root  wheel  15057 May  4 01:39 pstore.rb
+-rw-r--r--   1 root  wheel   4647 May  4 01:39 profiler.rb
+-rw-r--r--   1 root  wheel    235 May  4 01:39 profile.rb
+-rw-r--r--   1 root  wheel  12668 May  4 01:39 prime.rb
+-rw-r--r--   1 root  wheel  16276 May  4 01:39 prettyprint.rb
+-rw-r--r--   1 root  wheel  15439 May  4 01:39 pp.rb
+-rw-r--r--   1 root  wheel  16562 May  4 01:39 pathname.rb
+-rw-r--r--   1 root  wheel  10904 May  4 01:39 ostruct.rb
+-rw-r--r--   1 root  wheel  59129 May  4 01:39 optparse.rb
+drwxr-xr-x   9 root  wheel    288 May  4 01:39 optparse
+-rw-r--r--   1 root  wheel     59 May  4 01:39 optionparser.rb
+-rw-r--r--   1 root  wheel    469 May  4 01:39 openssl.rb
+drwxr-xr-x  11 root  wheel    352 May  4 01:39 openssl
+-rw-r--r--   1 root  wheel  22336 May  4 01:39 open3.rb
+-rw-r--r--   1 root  wheel  25735 May  4 01:39 open-uri.rb
+-rw-r--r--   1 root  wheel   5971 May  4 01:39 observer.rb
+drwxr-xr-x  10 root  wheel    320 May  4 01:39 net
+-rw-r--r--   1 root  wheel   2214 May  4 01:39 mutex_m.rb
+-rw-r--r--   1 root  wheel   8055 May  4 01:39 monitor.rb
+-rw-r--r--   1 root  wheel  86905 May  4 01:39 mkmf.rb
+-rw-r--r--   1 root  wheel  61611 May  4 01:39 matrix.rb
+drwxr-xr-x   4 root  wheel    128 May  4 01:39 matrix
+-rw-r--r--   1 root  wheel  24033 May  4 01:39 logger.rb
+-rw-r--r--   1 root  wheel   5906 May  4 01:39 kconv.rb
+-rw-r--r--   1 root  wheel   1809 May  4 01:39 json.rb
+drwxr-xr-x   7 root  wheel    224 May  4 01:39 json
+-rw-r--r--   1 root  wheel  23073 May  4 01:39 irb.rb
+drwxr-xr-x  25 root  wheel    800 May  4 01:39 irb
+-rw-r--r--   1 root  wheel  20032 May  4 01:39 ipaddr.rb
+drwxr-xr-x   3 root  wheel     96 May  4 01:39 io
+-rw-r--r--   1 root  wheel  15787 May  4 01:39 getoptlong.rb
+-rw-r--r--   1 root  wheel   8691 May  4 01:39 forwardable.rb
+drwxr-xr-x   3 root  wheel     96 May  4 01:39 forwardable
+-rw-r--r--   1 root  wheel   2532 May  4 01:39 find.rb
+-rw-r--r--   1 root  wheel  48295 May  4 01:39 fileutils.rb # Utilities for manipulating files easily from Ruby programs
+drwxr-xr-x   3 root  wheel     96 May  4 01:39 fileutils
+-rw-r--r--   1 root  wheel   1722 May  4 01:39 fiddle.rb
+drwxr-xr-x  10 root  wheel    320 May  4 01:39 fiddle
+-rw-r--r--   1 root  wheel   2217 May  4 01:39 expect.rb
+-rw-r--r--   1 root  wheel  29420 May  4 01:39 erb.rb
+-rw-r--r--   1 root  wheel   6460 May  4 01:39 English.rb
+-rw-r--r--   1 root  wheel   4038 May  4 01:39 e2mmap.rb
+drwxr-xr-x   3 root  wheel     96 May  4 01:39 e2mmap
+-rw-r--r--   1 root  wheel     50 May  4 01:39 drb.rb
+drwxr-xr-x  13 root  wheel    416 May  4 01:39 drb
+-rw-r--r--   1 root  wheel   2894 May  4 01:39 digest.rb
+drwxr-xr-x   3 root  wheel     96 May  4 01:39 digest
+-rw-r--r--   1 root  wheel  10695 May  4 01:39 delegate.rb
+-rw-r--r--   1 root  wheel  30694 May  4 01:39 debug.rb
+-rw-r--r--   1 root  wheel   1033 May  4 01:39 date.rb
+-rw-r--r--   1 root  wheel  53245 May  4 01:39 csv.rb
+drwxr-xr-x  11 root  wheel    352 May  4 01:39 csv
+-rw-r--r--   1 root  wheel    368 May  4 01:39 coverage.rb
+-rw-r--r--   1 root  wheel   9716 May  4 01:39 cmath.rb
+-rw-r--r--   1 root  wheel  10038 May  4 01:39 cgi.rb
+drwxr-xr-x   8 root  wheel    256 May  4 01:39 cgi
+-rw-r--r--   1 root  wheel  18248 May  4 01:39 bundler.rb
+drwxr-xr-x  81 root  wheel   2592 May  4 01:39 bundler
+-rw-r--r--   1 root  wheel    390 May  4 01:39 bigdecimal.rb
+drwxr-xr-x   7 root  wheel    224 May  4 01:39 bigdecimal
+-rw-r--r--   1 root  wheel  18500 May  4 01:39 benchmark.rb # A library for measuring program performance
+-rw-r--r--   1 root  wheel   3375 May  4 01:39 base64.rb
+-rw-r--r--   1 root  wheel   3573 May  4 01:39 abbrev.rb
+
+>> RbConfig::CONFIG["bindir"] # Ruby command-line tools
+=> "/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin"
+
+total 96
+-rwxr-xr-x  1 root  wheel  135200 May  4 01:39 ruby # The interpreter
+-rwxr-xr-x  1 root  wheel     560 May  4 01:39 ri # Ruby documentation tool
+-rwxr-xr-x  1 root  wheel     564 May  4 01:39 rdoc # Ruby documentation tool
+-rwxr-xr-x  1 root  wheel     564 May  4 01:39 rake # Ruby make, a task-management utility
+-rwxr-xr-x  1 root  wheel     558 May  4 01:39 irb # The interactive Ruby interpreter
+-rwxr-xr-x  1 root  wheel     596 May  4 01:39 gem # A Ruby library and application package-management utility
+-rwxr-xr-x  1 root  wheel    5136 May  4 01:39 erb # A templating system
+-rwxr-xr-x  1 root  wheel     582 May  4 01:39 bundler
+-rwxr-xr-x  1 root  wheel     580 May  4 01:39 bundle
+
+>> RbConfig::CONFIG["archdir"] # Architecture-specific extensions and libraries (compiled, binary files)
+=> "/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin24" 
+
+total 3280
+-rwxr-xr-x   1 root  wheel  192496 May  4 01:39 zlib.bundle
+-rwxr-xr-x   1 root  wheel  135728 May  4 01:39 syslog.bundle
+-rwxr-xr-x   1 root  wheel  120656 May  4 01:39 strscan.bundle
+-rwxr-xr-x   1 root  wheel  155648 May  4 01:39 stringio.bundle
+-rwxr-xr-x   1 root  wheel  399200 May  4 01:39 socket.bundle
+-rwxr-xr-x   1 root  wheel  121216 May  4 01:39 sdbm.bundle
+-rwxr-xr-x   1 root  wheel  438112 May  4 01:39 ripper.bundle
+-rwxr-xr-x   1 root  wheel  140976 May  4 01:39 readline.bundle
+-rw-r--r--   1 root  wheel   15856 May  4 01:39 rbconfig.rb
+drwxr-xr-x   3 root  wheel      96 May  4 01:39 rbconfig
+drwxr-xr-x   3 root  wheel      96 May  4 01:39 racc
+-rwxr-xr-x   1 root  wheel  120816 May  4 01:39 pty.bundle
+-rwxr-xr-x   1 root  wheel  323744 May  4 01:39 psych.bundle
+-rwxr-xr-x   1 root  wheel  153200 May  4 01:39 pathname.bundle
+-rwxr-xr-x   1 root  wheel  698608 May  4 01:39 openssl.bundle
+-rwxr-xr-x   1 root  wheel  156752 May  4 01:39 objspace.bundle
+-rwxr-xr-x   1 root  wheel  615024 May  4 01:39 nkf.bundle
+drwxr-xr-x   3 root  wheel      96 May  4 01:39 json
+drwxr-xr-x   5 root  wheel     160 May  4 01:39 io
+-rwxr-xr-x   1 root  wheel  157824 May  4 01:39 fiddle.bundle
+-rwxr-xr-x   1 root  wheel  100768 May  4 01:39 fiber.bundle
+-rwxr-xr-x   1 root  wheel  100800 May  4 01:39 fcntl.bundle
+-rwxr-xr-x   1 root  wheel  121136 May  4 01:39 etc.bundle
+drwxr-xr-x  42 root  wheel    1344 May  4 01:39 enc
+-rwxr-xr-x   1 root  wheel  119856 May  4 01:39 digest.bundle
+drwxr-xr-x   7 root  wheel     224 May  4 01:39 digest
+-rwxr-xr-x   1 root  wheel  121024 May  4 01:39 dbm.bundle
+-rwxr-xr-x   1 root  wheel  438176 May  4 01:39 date_core.bundle
+-rwxr-xr-x   1 root  wheel  135664 May  4 01:39 coverage.bundle
+-rwxr-xr-x   1 root  wheel  100832 May  4 01:39 continuation.bundle
+drwxr-xr-x   3 root  wheel      96 May  4 01:39 cgi
+-rwxr-xr-x   1 root  wheel  238592 May  4 01:39 bigdecimal.bundle
+
+>> RbConfig::CONFIG["sitedir"] # Your own or third-party extensions and libraries (written in Ruby)
+=> "/Library/Ruby/Site" 
+>> RbConfig::CONFIG["vendordir"] # Third-party extensions and libraries (written in Ruby)
+=> "/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/vendor_ruby"
+>> RbConfig::CONFIG["sitelibdir"] # Your own Ruby language extensions (written in Ruby)
+=> "/Library/Ruby/Site/2.6.0"
+>> RbConfig::CONFIG["sitearchdir"] # Your own Ruby language extensions (written in C)
+=> "/Library/Ruby/Site/2.6.0/universal-darwin24"
+
+
+
+ant0n@ant0n ~/repos/learn_ruby/sample_code (main) :) ruby -e 'puts $:'
+/Library/Ruby/Gems/2.6.0/gems/did_you_mean-1.3.0/lib
+/Library/Ruby/Site/2.6.0
+/Library/Ruby/Site/2.6.0/arm64e-darwin24
+/Library/Ruby/Site/2.6.0/universal-darwin24
+/Library/Ruby/Site
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/vendor_ruby/2.6.0
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/vendor_ruby/2.6.0/arm64e-darwin24
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/vendor_ruby/2.6.0/universal-darwin24
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/vendor_ruby
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/arm64e-darwin24
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin24
+
+
+ant0n@ant0n ~/repos/learn_ruby/sample_code (main) :) ruby -h
+Usage: ruby [switches] [--] [programfile] [arguments]
+  -0[octal]       specify record separator (\0, if no argument)
+  -a              autosplit mode with -n or -p (splits $_ into $F)
+  -c              check syntax only
+  -Cdirectory     cd to directory before executing your script
+  -d              set debugging flags (set $DEBUG to true)
+  -e 'command'    one line of script. Several -e's allowed. Omit [programfile]
+  -Eex[:in]       specify the default external and internal character encodings
+  -Fpattern       split() pattern for autosplit (-a)
+  -i[extension]   edit ARGV files in place (make backup if extension supplied)
+  -Idirectory     specify $LOAD_PATH directory (may be used more than once)
+  -l              enable line ending processing
+  -n              assume 'while gets(); ... end' loop around your script
+  -p              assume loop like -n but print line also like sed
+  -rlibrary       require the library before executing your script
+  -s              enable some switch parsing for switches after script name
+  -S              look for the script using PATH environment variable
+  -T[level=1]     turn on tainting checks
+  -v              print the version number, then turn on verbose mode
+  -w              turn warnings on for your script
+  -W[level=2]     set warning level; 0=silence, 1=medium, 2=verbose
+  -x[directory]   strip off text before #!ruby line and perhaps cd to directory
+  --jit           enable JIT with default options (experimental)
+  --jit-[option]  enable JIT with an option (experimental)
+  -h              show this message, --help for more info
